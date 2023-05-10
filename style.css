@@ -18,7 +18,7 @@ html {
       padding: 1em;
     }
 
-    h1 {
+    h1,a {
       font-size: 2em;
       grid-column: 1 / -1;
       margin: 0;
