@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Redaction-50";
+  src: url("/fonts/Redaction/Redaction_50-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Relative-Book-Pro";
+  src: url("/fonts/Relative/relative-book-pro.woff2") format("woff2"), url("/fonts/relative-book-pro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Relative-Black-Italic-Pro";
+  src: url("/fonts/Relative/relative-black-italic-pro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+a,p,a:visited {
+    color: #ebebeb;
+}
+
+html {
+  cursor: url('./cursor.png'), default;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Relative-Book-Pro', normal;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+em {
+    font-family: 'Relative-Black-Italic-Pro';
+}
+
+h1,li:first-child {
+  font-weight: 600;
+  font-family: 'Redaction-50';
+  color: #ffffff;
+}
+
+nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 1em;
+      min-width: 24em;
+      padding: 1em 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      margin-bottom: 25px;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+input {
+  background-color: unset;
+  font: 16px 'Relative-Black-Italic-Pro' ;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-top-style: hidden;
+  border-bottom-style: soild;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-bottom-color: #ffffff;
+  text-align: center;
+  margin-top: 0px;
+  outline: 0;
+  padding-bottom: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: #fafffa;
+    background: #000000;
+  }
+}
+
+
+
+.fadein1 { animation: fadeIn 3s; 
+           grid-column: 1 / -1; }
+.fadein2 { animation: fadeIn 6s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
