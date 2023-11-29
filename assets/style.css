@@ -126,7 +126,8 @@ input {
 
 
 .fadein1 { animation: fadeIn 3s; 
-           grid-column: 1 / -1; }
+           grid-column: 1 / -1;
+           margin: 10px; }
 .fadein2 { animation: fadeIn 6s; }
 
 @keyframes fadeIn {
@@ -143,3 +144,4 @@ input {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
