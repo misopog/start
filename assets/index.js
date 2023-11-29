@@ -11,4 +11,14 @@ titleChanger = (text, delay) => {
   }, delay);
 };
 
-titleChanger(["homepage", "made by misopog"], 2000);
+titleChanger(["startpage", "made by misopog", "misopog.xyz"], 2000);
+
+
+window.onload = function() {
+    setInterval(function(){
+        var date = new Date();
+        var displayTime = date.toLocaleTimeString();
+
+        document.getElementById('clock').innerHTML = displayTime;
+    }, 1000); // 1000 milliseconds = 1 second
+}
